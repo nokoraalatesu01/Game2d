@@ -8,7 +8,7 @@ This project is a pure Java SE (Swing/AWT/Java2D) game with no external dependen
 - `assets/` Game assets
 - `src/Main.java` Entry point
 
-## Compile + Run (no Gradle)
+## Compile + Run
 
 From the project root:
 
