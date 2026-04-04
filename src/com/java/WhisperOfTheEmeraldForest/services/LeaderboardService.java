@@ -116,7 +116,7 @@ public class LeaderboardService {
             String responseBody = readResponseBody(connection, code);
             if (code == HttpURLConnection.HTTP_CREATED || code == HttpURLConnection.HTTP_OK) {
                 statusMessage = "Da luu thanh tich.";
-                fetchTopScores(10);
+                fetchTopScores(5);
             } else {
                 statusMessage = "Luu diem that bai: HTTP " + code + formatResponseSuffix(responseBody);
             }
