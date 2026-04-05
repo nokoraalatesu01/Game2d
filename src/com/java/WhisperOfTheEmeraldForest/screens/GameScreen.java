@@ -152,7 +152,7 @@ public class GameScreen implements Screen {
                 checkMapTeleport();
             } else if (!deathScreenQueued && player.isDeathAnimationFinished()) {
                 deathScreenQueued = true;
-                game.setScreen(new DeathScreen(game, 1, getDeathMessage(player.getDeathReason())));
+            game.setScreen(new DeathScreen(game, 1, player.getDeathReason(), getDeathMessage(player.getDeathReason())));
                 return;
             }
 
@@ -292,11 +292,11 @@ public class GameScreen implements Screen {
 
     private void killByDrowning() {
         if (player.isDead()) return;
-        player.takeDamage(player.getMaxHp(), "duoi nuoc");
+        player.takeDamage(player.getMaxHp(), "drown");
     }
 
     private String getDeathMessage(String reason) {
-        if ("duoi nuoc".equalsIgnoreCase(reason)) {
+        if ("drown".equalsIgnoreCase(reason)) {
             return "Do you really think he can swim with that armor";
         }
         return "Bruh suck as a cock-a-doodle-doo";

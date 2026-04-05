@@ -22,6 +22,7 @@ public class DeathScreen implements Screen {
     private final Core game;
     private final int retryLevel;
     private final String deathReason;
+    private final String deathMessage;
 
     private final BufferedImage backgroundTexture;
     private final Font font;
@@ -30,11 +31,12 @@ public class DeathScreen implements Screen {
     private final LoopingSound music = new LoopingSound();
     private DeathOption selectedOption = DeathOption.RETRY;
 
-    public DeathScreen(Core game, int retryLevel, String deathReason) {
+    public DeathScreen(Core game, int retryLevel, String deathReason, String deathMessage) {
         this.game = game;
         this.retryLevel = retryLevel;
         this.deathReason = deathReason;
-        if (deathReason != null && deathReason.toLowerCase().contains("duoi nuoc")) {
+        this.deathMessage = deathMessage;
+        if (deathReason != null && deathReason.equalsIgnoreCase("drown")) {
             this.backgroundTexture = Assets.load("water death.png");
         } else {
             this.backgroundTexture = Assets.load("beat_death.png");
@@ -88,7 +90,7 @@ public class DeathScreen implements Screen {
 
         g.setFont(font.deriveFont(Font.PLAIN, 22f));
         g.setColor(new Color(255, 224, 224));
-        String reason = deathReason == null ? "" : deathReason;
+        String reason = deathMessage == null ? "" : deathMessage;
         metrics = g.getFontMetrics();
         g.drawString(reason, (int) (centerX - metrics.stringWidth(reason) / 2f), toScreenYText(centerY + 55f));
 

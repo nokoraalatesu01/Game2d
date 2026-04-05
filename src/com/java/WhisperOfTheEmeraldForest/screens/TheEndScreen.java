@@ -121,7 +121,7 @@ public class TheEndScreen implements Screen {
                 checkMapTeleport();
             } else if (!deathScreenQueued && player.isDeathAnimationFinished()) {
                 deathScreenQueued = true;
-                game.setScreen(new DeathScreen(game, 3, getDeathMessage(player.getDeathReason())));
+            game.setScreen(new DeathScreen(game, 3, player.getDeathReason(), getDeathMessage(player.getDeathReason())));
                 return;
             }
 
@@ -253,14 +253,14 @@ public class TheEndScreen implements Screen {
 
     private void killByDrowning() {
         if (player.isDead()) return;
-        player.takeDamage(player.getMaxHp(), "duoi nuoc");
+        player.takeDamage(player.getMaxHp(), "drown");
     }
 
     private String getDeathMessage(String reason) {
-        if ("duoi nuoc".equalsIgnoreCase(reason)) {
+        if ("drown".equalsIgnoreCase(reason)) {
             return "Ban da chet vi bi duoi nuoc.";
         }
-        return "Ban da chet vi ga.";
+        return "Ban da chet vi enemy_hit.";
     }
 
     private void drawHpUI(java.awt.Graphics2D g) {
