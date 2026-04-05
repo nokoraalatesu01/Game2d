@@ -148,7 +148,7 @@ public class OrcEnemy {
                 float attackY = getCollisionY() + 4f;
                 if (overlaps(attackX, attackY, attackWidth, attackHeight,
                     player.getCollisionX(), player.getCollisionY(), Player.COLLISION_WIDTH, Player.COLLISION_HEIGHT)) {
-                    player.takeDamage(1f, "ga");
+            player.takeDamage(1f, "enemy_hit");
                 }
                 attackHitApplied = true;
             }

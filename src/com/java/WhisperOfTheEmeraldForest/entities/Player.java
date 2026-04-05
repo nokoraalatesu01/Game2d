@@ -418,7 +418,7 @@ public class Player {
     public void die(String reason) {
         if (dead) return;
         dead = true;
-        deathReason = reason == null ? "ga" : reason;
+        deathReason = reason == null ? "enemy_hit" : reason;
         endAttack();
         currentState = State.DEATH;
         stateTime = 0f;
