@@ -121,7 +121,7 @@ public class LeaderboardService {
                 statusMessage = "Luu diem that bai: HTTP " + code + formatResponseSuffix(responseBody);
             }
         } catch (IOException ex) {
-            statusMessage = "Luu diem that bai: " + simplifyError(ex);
+            statusMessage = "Luu diem that bai: " + simplifyError(ex) + " Try connect to the internet";
         } finally {
             if (connection != null) {
                 connection.disconnect();
