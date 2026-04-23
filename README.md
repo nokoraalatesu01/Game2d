@@ -1,7 +1,8 @@
 # Whisper Of The Emerald Forest
 
 `Whisper Of The Emerald Forest` la mot game 2D platformer viet bang Java SE voi `Swing/AWT/Java2D`, khong dung engine ngoai. Nguoi choi vao vai mot hiep si thuc hien hanh trinh tim lai vien ngoc luc bao de khoi phuc su binh yen cho khu rung Emerald Forest.
-
+## Link bai thuyet trinh
+https://docs.google.com/presentation/d/1pDiTIHz6L_13rbvOt1VJYRaLFs943rHs/edit?usp=sharing&ouid=117569433518339942759&rtpof=true&sd=true
 ## Bai lam gom
 
 - Menu mo dau co cac muc `Play`, `Resolution`, `Intro`, `Guide`, `Leaderboard`, `Credits`, `Exit`
