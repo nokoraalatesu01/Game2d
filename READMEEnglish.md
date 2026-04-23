@@ -2,6 +2,10 @@
 
 `Whisper Of The Emerald Forest` is a 2D platformer game built with pure Java SE using `Swing/AWT/Java2D`, without any external game engine. The player takes the role of a knight on a journey to recover the emerald crystal and restore peace to the Emerald Forest.
 
+## Link presentation
+
+https://docs.google.com/presentation/d/1pDiTIHz6L_13rbvOt1VJYRaLFs943rHs/edit?usp=sharing&ouid=117569433518339942759&rtpof=true&sd=true
+
 ## This Project Includes
 
 - A start menu with `Play`, `Resolution`, `Intro`, `Guide`, `Leaderboard`, `Credits`, and `Exit`
