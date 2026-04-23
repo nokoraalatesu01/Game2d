@@ -105,7 +105,7 @@ java -cp out Main
 - Cai `JDK` va co san `javac`, `java` trong `PATH`
 - He dieu hanh Windows la phu hop nhat vi du an co dung font he thong tai `C:/Windows/Fonts/segoeui.ttf`
 
-## Luong choi chinh
+## Co che gameplay
 
 1. Mo game va vao menu chinh
 2. Chon `Play`
